@@ -1,0 +1,150 @@
+/* Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* Styles */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: hsl(216, 12%, 8%);
+}
+
+.mainbody {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    --primary-color: hsl(213, 19%, 18%);
+    background-color: var(--primary-color);
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.inner__container {
+    margin-bottom: 35px;
+}
+
+#star {
+    --primary-color: hsl(216, 11%, 27%);
+    background-color: var(--primary-color);
+    display: inline-flex;
+    padding: 12px;
+    border-radius: 100%;
+}
+
+h1 {
+    font-family: Overpass;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+p {
+    font-family: Overpass;
+    font-weight: 400;
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    line-height: 160%; 
+}
+
+#rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.score {
+    --primary-color: hsl(216, 11%, 27%);
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Overpass;
+    font-weight: 700;
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+}
+
+.score:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    cursor: pointer;
+}
+
+#submit {
+    background-color: hsl(25, 97%, 53%);
+    padding: 15px 0px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: Overpass;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+#submit:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+/* After the click */
+.container_new {
+    position: absolute;
+    --primary-color: hsl(213, 19%, 18%);
+    background-color: var(--primary-color);
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#text_selection {
+    background-color: hsl(216, 11%, 27%);
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    font-family: Overpass;
+    font-weight: 300;
+    font-size: 15px;
+    color: hsl(25, 97%, 53%);
+}
+
+.score_active {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Overpass;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    background-color: hsl(216, 12%, 54%);
+}
+
+.score_active:hover {
+    cursor: pointer;
+}

@@ -130,6 +130,12 @@ p {
     color: hsl(25, 97%, 53%);
 }
 
+/* без этой опции текст стоит не по центру горизонтально. почему? */
+#text_result{
+    position: relative;
+    top: 1px;
+}
+
 .score_active {
     border-radius: 50%;
     width: 50px;
@@ -147,4 +153,17 @@ p {
 
 .score_active:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+    p {
+        width: 250px;
+    }
+
+    .score,
+    .score_active {
+        width: 40px;
+        height: 40px;
+        padding: 7px;
+        font-size: 15px;
 }
